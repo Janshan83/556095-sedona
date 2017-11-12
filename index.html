@@ -95,10 +95,36 @@
                 <a class="button interest-button" href="interest.html">Поиск остинец в Седоне</a>  
             </section>
           <!--6я секция карта-->
-            <section class="modal-map">
+            <section class="map">
                 <h2 class="visually-hidden">Седона и окрестности</h2>
                 <img src="img/main/map.jpg" width="1718" height="748" alt="Карта местности">
             </section>
+            <section class="modal-search">
+                <form class="search" method="get" action="https://echo.htmlacademy.ru">
+                    <fieldset>
+                    <legend class="visually-hidden">>Поиск гостиниц в Седоне</legend>
+                    <p>
+                        <label for="date-start">Дата заезда:</label>
+                        <input class="search-input" type="date" name="date-start" id="date-start">
+                    </p>
+                    <p>
+                        <label for="date-stop">Дата выезда:</label>
+                        <input class="search-input" type="date" name="date-stop" id="date-stop">
+                    </p>
+                    <p>
+                        <label for="person">Взрослые:</label>
+                        <input class="number-input" type="number" min="0" max="100" name="person" id="person">
+                        <label for="child">Дети:</label>
+                        <input class="number-input" type="number" min="0" max="100" name="child" id="child">
+                    </p>
+                    <p>
+                        <button type="submit" class="search-button button">Найти</button>
+                    </p>
+                    </fieldset>
+                </form>
+            </section>
+        
+        
         </main>
       <!--футер-->
         <footer class="main-footer">
