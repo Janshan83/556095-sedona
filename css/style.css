@@ -63,26 +63,7 @@ a {
 .site-navigation a:active {
     color: #766357;
 }
-.slogan{
-    display: flex;
-    align-items:center;
-    flex-direction:column;
-    
-    background-color: aqua;
-    background-image: url("img/header/background-photo.jpg");
-    background-position: top;
-    background-repeat: no-repeat;
-    
-}
-.welcome{
-    
-}
-.sedona{
-    
-}
-.because{
-    
-}
+
 }
 .slogan-one {
     font-size: 21px;
@@ -207,11 +188,15 @@ legend{
 .house-type {
   list-style: none;  
 }
+fieldset {
+    border: none;
+}
 .filters-form {
    background-color: #81b3d2;
-    background-image: url("img/header/background-photo.jpg");
+    background-image: url("/img/main/filter-background.jpg");
     background-position: top center;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
+    
 }
 .sort-found {
     font-size: 21px;
@@ -273,4 +258,85 @@ legend{
 }
 .button-book:active{
     background-color: #503e33;
+}
+/**Сеточные стили**/
+
+.navigation {
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+}
+.site-navigation {
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    padding: 20px;
+    margin: auto;
+}
+.slogan{
+    display: flex;
+    align-items:center;
+    flex-direction:column;
+    
+    background-color: #ffffff;
+    background-image: url("/img/header/background-photo.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    
+}
+.welcome{
+    
+}
+.sedona{
+    
+}
+.because{
+    
+}
+.container{
+    display: flex;
+    align-items:center;
+    flex-direction:column;
+    width: 1200px;
+}
+.features {
+    display: flex;
+}
+.features-one{
+    width: 400px;
+}
+.image-hotel{
+    width: 800px;
+}
+.description{
+    display: flex;
+    align-items:center;
+}
+.description-list {
+    display: flex;
+    align-items:center;
+    flex-direction:column;
+}
+.interest {
+    display: flex;
+    align-items:center;
+    flex-direction:column;
+}
+.modal-search{
+    display: flex;
+    align-items:center;
+    flex-direction:column;
+}
+.main-footer{
+    display: flex;
+    justify-content: space-around;
+}
+.footer-social{
+    display: flex;
+    align-items:center;
+    
+}
+.filters {
+    display: flex;
+    align-items:center;
 }
