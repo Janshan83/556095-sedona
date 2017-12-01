@@ -10,15 +10,12 @@
     <body>
         <header>
             <nav class="navigation">
-            
-            <ul class="site-navigation">
-                <li><a href="info.html">Информация</a></li>
-                <li><a href="foto&video.html">Фото и видео</a></li>
-            </ul>
             <a class="header-logo" href="index.html">
                 <img src="img/header/logo.png" width="138" height="70" alt="Логотип Седона">
             </a>
-            <ul class="site-navigation"> 
+            <ul class="site-navigation">
+                <li><a href="info.html">Информация</a></li>
+                <li><a href="foto&video.html">Фото и видео</a></li>
                 <li><a href="mapstate.html">Карта штата</a></li>
                 <li><a href="hotels.html">Отели</a></li>
             </ul>
@@ -29,7 +26,7 @@
             <!--Секция форма поиска гостиниц-->
             <section class="filters">
                 <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
-                    <fieldset>
+                    <fieldset class="filter-items">
                     <legend>Инфраструктура:</legend>
                         <ul class="infrastructure">
                             <li class="filter-options">
@@ -46,7 +43,7 @@
                             </li>
                         </ul>
                     </fieldset>
-                    <fieldset>
+                    <fieldset class="filter-items">
                     <legend>Тип жилья:</legend>
                         <ul class="house-type">
                             <li class="filter-options">
@@ -63,22 +60,33 @@
                             </li>
                         </ul>
                     </fieldset>
-                    <fieldset>
-                    <legend>Стоимость в сутки:</legend>
-                        <span class="filter-price">от 0 до 3000</span>
-                        <p><input class="visually-hidden filter-range" type="range" name="price-range" id="price-range" min="0" max="3000">
-                        <label for="price-range" class="visually-hidden">Выбор диапазона цены от 0 до 3000</label></p>
-                        <p><button type="submit" class="filter-button button">Показать</button>                           </p>
+                 
+                    <fieldset class="filter-items filter-range">
+                        <div class="filter-range-title">Стоимость в сутки (р):</div>
+                            <div class="price-controls">
+                            <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                            <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+                            </div>
+                            <div class="range-controls">
+                                <div class="scale">
+                                    <div class="bar"></div>
+                                </div>
+                            <div class="range-toggle range-toggle-min"></div>
+                            <div class="range-toggle range-toggle-max"></div>
+                        </div>
+                        <button class="btn-transparent" type="submit">Показать</button>
                     </fieldset>
                 </form>
             </section>
+            <!--</section>
             <form>
                 
             </form>
             <section class="filters">
                 <h2 class="visually-hidden">Фильтр товаров</h2>
             <!--Здесь будет форма-->
-            </section>
+            
+            
           
             <!--Секция результат поиска и сортировка найденых гостиниц-->
             <section class="catalog">
@@ -209,7 +217,7 @@
             </ul>
             <div class="footer-copyright">
             <b>WEBSITE by</b>
-            <a class="copyright" href="https://up.htmlacademy.ru">HTML ACADEMY<img src="img/footer/logo-name.svg" width="115" height="41" alt="Лоотип разработчика"> </a>
+            <a class="copyright" href="https://up.htmlacademy.ru"><img src="img/footer/logo-name.png"><img src="img/footer/logo-name.svg" width="115" height="41" alt="Лоотип разработчика"> </a>
             </div>
         </footer>
     </body>

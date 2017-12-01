@@ -8,21 +8,18 @@
   <link href="css/style.css" rel="stylesheet">
   </head>
     <body>
-      <header>
+      <header class="main-header">
         <nav class="navigation">
-            
-            <ul class="site-navigation">
-                <li><a href="info.html">Информация</a></li>
-                <li><a href="foto&video.html">Фото и видео</a></li>
-            </ul>
             <a class="header-logo" href="index.html">
                 <img src="img/header/logo.png" width="138" height="70" alt="Логотип Седона">
             </a>
-            <ul class="site-navigation"> 
+            <ul class="site-navigation">
+                <li><a href="info.html">Информация</a></li>
+                <li><a href="foto&video.html">Фото и видео</a></li>
                 <li><a href="mapstate.html">Карта штата</a></li>
                 <li><a href="hotels.html">Отели</a></li>
             </ul>
-        </nav>   
+        </nav> 
             <div class="slogan">
                 <div class="welcome" >
                     <img  src="img/header/slogan1.png" width="188" height="86" alt="welcome -to the gorgeous-">
@@ -42,7 +39,7 @@
             
           <!--1я секция наши преимущества-->
             <section class="features">
-                
+                <h2 class="visually-hidden">Первое преимущество</h2>
                 <div class="features-one">
                     <b class="features-name">Настощий городок</b>
                     <span class="features-namber">-№1-</span>
@@ -54,6 +51,7 @@
             </section>
                     <!--2я секция 3-и описания преимуществ-->
             <section class="description">
+                <h2 class="visually-hidden">Описания преимуществ</h2> 
                 <div class="description-list">
                     <img src="/img/main/icon-1.png" width="75" height="72" alt="Иконка-дом">
                     <b class="description-name">Жилье</b>
@@ -72,7 +70,7 @@
             </section>
           <!--3я секция наши преимущества-->
             <section class="features">
-                
+                <h2 class="visually-hidden">Второе преимущество</h2>
                 <div class="features-two">
                     <b class="features-name">Там есть мост дьвола</b>
                     <span class="features-namber">- №2 -</span>
@@ -83,8 +81,8 @@
                 </div>
             </section>
           <!--4я секция наши преимущества-->
-            <section class="description">
-               
+            <section class="description description-oll">
+                <h2 class="visually-hidden">Преимущество 3,4,5.</h2> 
                 <div class="description-list">
                     <b class="description-name">Небольшая площадь</b>
                     <span class="description-number">- №3 -</span>
@@ -105,7 +103,7 @@
             <section class="interest">
                 <h2>Заинтересовались?</h2>
                 <p class="interest-info">укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-                <button type="button" class="interest-button" href="interest.html">Поиск гостиницы в Седоне</button>  
+                <button type="button" class="button interest-button" href="interest.html">Поиск гостиницы в Седоне</button>  
             </section>
           <!--6я секция карта-->
             <section class="map">
@@ -115,7 +113,7 @@
             <section class="modal-search">
                 <form class="search" method="get" action="https://echo.htmlacademy.ru">
                     <fieldset>
-                    <legend class="visually-hidden">Поиск гостиниц в Седоне</legend>
+                    <legend class="visually-hidden">>Поиск гостиниц в Седоне</legend>
                     <p>
                         <label for="date-start">Дата заезда:</label>
                         <input class="search-input" type="date" name="date-start" id="date-start">
@@ -131,7 +129,7 @@
                         <input class="number-input" type="number" min="0" max="100" name="child" id="child">
                     </p>
                     <p>
-                        <button type="submit" class="search-button button">Найти</button>
+                        <button type="submit" class="search-button">Найти</button>
                     </p>
                     </fieldset>
                 </form>
@@ -152,7 +150,7 @@
             </ul>
             <div class="footer-copyright">
             <b>WEBSITE by</b>
-            <a class="copyright" href="https://up.htmlacademy.ru">HTML ACADEMY<img src="img/footer/logo-name.svg" width="115" height="41" alt="Лоотип разработчика"> </a>
+            <a class="copyright" href="https://up.htmlacademy.ru"><img src="img/footer/logo-name.png"><img src="img/footer/logo-name.svg" width="115" height="41" alt="Лоотип разработчика"> </a>
             </div>
         </footer>
     </body>
