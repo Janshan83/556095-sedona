@@ -14,10 +14,10 @@
                 <img src="img/header/logo.png" width="138" height="70" alt="Логотип Седона">
             </a>
             <ul class="site-navigation">
-                <li><a href="info.html">Информация</a></li>
-                <li><a href="foto&video.html">Фото и видео</a></li>
-                <li><a href="mapstate.html">Карта штата</a></li>
-                <li><a href="hotels.html">Отели</a></li>
+                <li><a class="site-navigation-item-left" href="catalog.html">Информация</a></li>
+                <li><a class="site-navigation-item-left" href="foto&video.html">Фото и видео</a></li>
+                <li><a class="site-navigation-item-rigth" href="mapstate.html">Карта штата</a></li>
+                <li><a class="site-navigation-item-rigth" href="hotels.html">Отели</a></li>
             </ul>
         </nav> 
             <div class="slogan">
@@ -30,7 +30,7 @@
                 <div class="because">
                     <img  src="img/header/slogan3.png" width="296" height="80" alt="Because the Grand Canyon sucks!">
                 </div>
-                <h1 class="slogan-one">Седона - небольшой городок в Аризоне завлуживающий большего</h1>
+                <h1 class="slogan-one">Седона - небольшой городок в Аризоне<br> завлуживающий большего</h1>
                 <p class="slogan-two">Рассомтрим пть причин по которым Седона круче чем Гранд каньон!</p>
           
           </div>
@@ -41,29 +41,29 @@
             <section class="features">
                 <h2 class="visually-hidden">Первое преимущество</h2>
                 <div class="features-one">
-                    <b class="features-name">Настощий городок</b>
-                    <span class="features-namber">-№1-</span>
+                    <h3 class="features-name">Настощий городок</h3>
+                    <p class="features-namber">-№1-</p>
                     <p class="features-annotation">Седона - не аттракцион  для туристов, там течет своя жизнь</p>
                 </div>
                 <div class="image-hotel">
-                    <img src="img/main/image-hotel.jpg" alt="Фоторафия достопримечательности">
+                    <img src="img/main/image-hotel.jpg" width="800" height="257" alt="Фоторафия достопримечательности">
                 </div>
             </section>
                     <!--2я секция 3-и описания преимуществ-->
             <section class="description">
                 <h2 class="visually-hidden">Описания преимуществ</h2> 
                 <div class="description-list">
-                    <img src="/img/main/icon-1.png" width="75" height="72" alt="Иконка-дом">
+                    <img src="img/main/icon-1.png" width="75" height="72" alt="Иконка-дом">
                     <b class="description-name">Жилье</b>
                     <p class="description-annotation">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                 </div>
                 <div class="description-list">
-                    <img src="/img/main/icon-2.png" width="75" height="72" alt="Иконка-еда">
+                    <img src="img/main/icon-3.png" width="75" height="72" alt="Иконка-еда">
                     <b class="description-name">Еда</b>
                     <p class="description-annotation">Всегда заказывайте фирменый бургер, вы не разочаруетесь!</p>
                 </div>
                 <div class="description-list">
-                    <img src="/img/main/icon-3.png" width="75" height="72" alt="Иконка-сувенир">
+                    <img src="img/main/icon-2.png" width="75" height="70" alt="Иконка-сувенир">
                     <b class="description-name">Сувениры</b>
                     <p class="description-annotation">Не только китайского, но и местного производства!</p>
                 </div>
@@ -72,8 +72,8 @@
             <section class="features">
                 <h2 class="visually-hidden">Второе преимущество</h2>
                 <div class="features-two">
-                    <b class="features-name">Там есть мост дьвола</b>
-                    <span class="features-namber">- №2 -</span>
+                    <h3 class="features-name">Там есть мост дьвола</h3>
+                    <p class="features-namber">- №2 -</p>
                     <p class="features-annotation">Да по нему можно пройти! Если вы осмелитесь</p>
                 </div>
                 <div class="image-bridge">
@@ -108,7 +108,7 @@
           <!--6я секция карта-->
             <section class="map">
                 <h2 class="visually-hidden">Седона и окрестности</h2>
-                <img src="img/main/map.jpg" width="1718" height="748" alt="Карта местности">
+                <img src="img/main/map.jpg" width="1200" height="748" alt="Карта местности">
             </section>
             <section class="modal-search">
                 <form class="search" method="get" action="https://echo.htmlacademy.ru">
@@ -129,7 +129,7 @@
                         <input class="number-input" type="number" min="0" max="100" name="child" id="child">
                     </p>
                     <p>
-                        <button type="submit" class="search-button">Найти</button>
+                        <a class="search-button" href="#" aria-label="Поиск гостиниц в Седоне">Найти</a>
                     </p>
                     </fieldset>
                 </form>
