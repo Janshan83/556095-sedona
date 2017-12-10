@@ -7,6 +7,7 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   </head>
+    <div class="main-back">
     <body>
         
             <header class="main-header">
@@ -107,23 +108,24 @@
                 <section class="interest">
                     <h2>Заинтересовались?</h2>
                     <p class="interest-info">укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-                    <p><a  class="interest-button" href="#">Поиск гостиницы в Седоне</a></p>  
+                    <button  class="button interest-button" >Поиск гостиницы в Седоне</button>
+                    
                 </section>
           <!--6я секция карта-->
                 <section class="map">
                     <h2 class="visually-hidden">Седона и окрестности</h2>
                     <img src="img/main/map.jpg" width="1200" height="748" alt="Карта местности">
-                </section>
-                <section class="modal-search">
+                    <section class="modal-search">
+                        
                     <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
                         
                         <p class="search">
                             <label for="date-start">Дата заезда:</label>
-                            <input class="search-input" type="date" name="date-start" id="date-start">
+                            <input class="search-input" type="date" name="date-start" id="date-start" placeholder="24 апреля 2017">
                         </p>
                         <p class="search">
                             <label for="date-stop">Дата выезда:</label>
-                            <input class="search-input" type="date" name="date-stop" id="date-stop">
+                            <input class="search-input" type="date" name="date-stop" id="date-stop" placeholder="4 июля 2017">
                         </p>
                         <p class="age-search">
                             <label for="person">Взрослые:</label>
@@ -131,10 +133,12 @@
                             <label for="child">Дети:</label>
                             <input class="number-input" type="number" min="0" max="100" name="child" id="child">
                         </p>
-                        <button class="button search-button" href="#" aria-label="Поиск гостиниц в Седоне">Найти</button>
+                        <a class="button search-button" href="#" aria-label="Поиск гостиниц в Седоне">Найти</a>
                         
                     </form>
                 </section>
+                </section>
+                
         
         
             </main>
@@ -175,9 +179,12 @@
                 
                 <div class="footer-copyright">
                     <span class="footer-copyright-slogan">WEBSITE by</span>
-                    <p ><a class="copyright" href="https://up.htmlacademy.ru"> </a></p>
+                    <p ><a class="copyright" href="https://up.htmlacademy.ru"><img src="img/footer/logo-name.png" width="115" height="41" alt="Лоотип разработчика">
+                        
+ </a></p>
                 </div>
             </footer>
         
     </body>
+    </div>
 </html>
