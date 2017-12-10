@@ -1,7 +1,7 @@
 
 body {
     
-    width: 100%;
+		width: 100%;
     margin: 0;
     padding: 0;
     display: flex;
@@ -19,12 +19,15 @@ body {
     background-repeat: no-repeat;
     
 }
+.main-conteiner{
+		box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+}
 a {
     text-decoration: none;
 }
 img {
-  max-width: 100%;
-  height: auto;
+  	max-width: 100%;
+  	height: auto;
 }
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -37,11 +40,11 @@ input[type="radio"].visually-hidden {
     border: 0;
     padding: 0;
 
-  white-space: nowrap;
+  	white-space: nowrap;
 
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+  	clip-path: inset(100%);
+  	clip: rect(0 0 0 0);
+  	overflow: hidden;
 }
 /*Хедер*/
 .main-header{
@@ -49,7 +52,7 @@ input[type="radio"].visually-hidden {
     align-items:center;
     flex-direction:column;
     width: 1200px;
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+    
     
 }
 .navigation {
@@ -164,7 +167,7 @@ input[type="radio"].visually-hidden {
     align-items:center;
     flex-direction:column;
     width: 1200px;
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+    
 }
 /*Преимущество 1*/
 .features {
@@ -382,7 +385,7 @@ input[type="radio"].visually-hidden {
     
 }
 .modal-search{
-   
+   	display: none;
     position: absolute;
     top: 0%;
     left: 50%;
@@ -392,7 +395,10 @@ input[type="radio"].visually-hidden {
     color: #000000;
     width: 568px;
     
-   background-color: #ffffff; 
+   	background-color: #ffffff; 
+}
+.modal-search-show {
+  display: block;
 }
 .search-form{
     display: flex;
@@ -544,7 +550,7 @@ input[type="radio"].visually-hidden {
     width: 1200px;
     margin: 0;
     padding: 0;
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+    
     
     
 }
@@ -924,71 +930,71 @@ input[type="radio"].visually-hidden {
 
 /*Сложная форма из демо*/
 .filter-range {
-  width: 330px;
+  	width: 330px;
   
 
-  color: #ffffff;
-  text-transform: uppercase;
+  	color: #ffffff;
+  	text-transform: uppercase;
 }
 
 .filter-range-title {
-  margin-bottom: 9px;
+  	margin-bottom: 9px;
 
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 21px;
+  	font-weight: 600;
+  	font-size: 16px;
+  	line-height: 21px;
 }
 
 .price-controls {
-  position: relative;
+  	position: relative;
   
-  height: 36px;
-  margin-bottom: 20px;
+  	height: 36px;
+  	margin-bottom: 20px;
 
-  font-size: 0;
+  	font-size: 0;
 
-  border: 2px solid #ffffff;
-  border-radius: 2px;
+  	border: 2px solid #ffffff;
+  	border-radius: 2px;
 }
 
 .price-controls::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  	content: "";
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
 
-  width: 2px;
-  height: 22px;
+  	width: 2px;
+  	height: 22px;
 
-  background: #ffffff;
-  transform: translate(-50%, -50%);
+  	background: #ffffff;
+  	transform: translate(-50%, -50%);
 }
 
 .price-controls label {
-  display: inline-block;
+		display: inline-block;
 
-  font-size: 14px;
-  line-height: 38px;
-  vertical-align: top;
+		font-size: 14px;
+		line-height: 38px;
+		vertical-align: top;
 
-  cursor: pointer;
+		cursor: pointer;
 }
 
 .price-controls .min-price,
 .price-controls .max-price {
-  width: 90px;
-  padding-left: 65px;
+		width: 90px;
+		padding-left: 65px;
 }
 
 .price-controls input {
-  width: 50px;
-  margin: 0;
+		width: 50px;
+		margin: 0;
 
-  color: inherit;
-  font: inherit;
+		color: inherit;
+		font: inherit;
 
-  background: none;
-  border: none;
+		background: none;
+		border: none;
 }
 
 .range-controls {
@@ -1057,13 +1063,6 @@ input[type="radio"].visually-hidden {
 
     background: #ffffff;
 }
-/*Кнопки все кроме сложной формы и футера
-
-
-
-
-
-*/
 
 
 
@@ -1084,8 +1083,8 @@ input[type="radio"].visually-hidden {
     background-color: #669ec0;
 }
 .button-detail:active{
-        color: rgba(225, 225, 225, 0.3);
-        background-color: #5496bd;
+		color: rgba(225, 225, 225, 0.3);
+    background-color: #5496bd;
 }
 .button-book {
     font-size: 14px;
@@ -1100,6 +1099,6 @@ input[type="radio"].visually-hidden {
     background-color: #604e43;
 } 
 .button-book:active{
-        color: rgba(225, 225, 225, 0.3);
-        background-color: #503e33;
+		color: rgba(225, 225, 225, 0.3);
+    background-color: #503e33;
 } 
