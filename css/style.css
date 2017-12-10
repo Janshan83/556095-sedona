@@ -768,6 +768,7 @@ input[type="radio"].visually-hidden {
 .sort-list{
     display: flex;
     list-style: none;
+     
     
 }
 
@@ -784,22 +785,23 @@ input[type="radio"].visually-hidden {
 }
 
 /*Оформлени ссылок сортировки*/
-.sort a{
+.sort-list a{
     
     color: rgba(0,0,0,0.3);
+    border-bottom: 0.5px dotted #81b3d2;
+    cursor: pointer;
     
-    
-}
-.sort a:hover{
+}pointer
+.sort-list a:hover{
     color: #81b3d2;
-    
+    border: none;
 }
-.sort a:active{
+.sort-list a:active{
     color: #000000;
-    
+     border: none;
 }
 /*Активный какой селектор?*/
-.sort a:link{
+.sort-list a:link{
     color: #81b3d2;
     
 }
